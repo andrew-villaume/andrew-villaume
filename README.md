@@ -1,3 +1,5 @@
 ****
 
-Testing HTML, CSS, and Javascript with a personal site 
+Testing HTML, CSS, and Javascript on a personal site.
+
+AndrewVillaume.com
