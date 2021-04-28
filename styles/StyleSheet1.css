@@ -1,1 +1,57 @@
-﻿
+﻿html {
+    background: linear-gradient(90deg,#C9D6FF,#E2E2E2);
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background-color:lightcoral;
+}
+h1 {
+    color: white;
+    width: 25%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+h2 {
+    position: absolute;
+    right: 43.5%;
+}
+nav {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 15px;
+    font-size: 1.5em;
+    position: absolute;
+    right: 5%;
+    top: 3px;
+}
+a {
+    padding: 15px;
+}
+p {
+    position: absolute;
+    right: 30%;
+    top: 75px;
+}
+
+img {
+    border: 2px solid lightcoral;
+    background-color: black;
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 15px;
+}
+
+main {
+    position: relative;
+}
+
+nav {
+    
+}
