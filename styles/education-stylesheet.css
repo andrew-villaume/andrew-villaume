@@ -56,3 +56,11 @@ header {
     position: relative;
     background-color:lightcoral;
 }
+
+h1 {
+    color: white;
+    width: 25%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
