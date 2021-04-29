@@ -37,3 +37,22 @@ html {
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #0000CD;
 }
+
+nav {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 15px;
+    font-size: 1.5em;
+    position: absolute;
+    right: 5%;
+    top: 3px;
+}
+a {
+    padding: 15px;
+}
+header {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background-color:lightcoral;
+}
