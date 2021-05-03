@@ -1,4 +1,4 @@
-﻿html {
+html {
     background: linear-gradient(90deg,#C9D6FF,#E2E2E2);
     height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -17,10 +17,6 @@ h1 {
     top: 10px;
     left: 10px;
 }
-h2 {
-    position: absolute;
-    right: 43.5%;
-}
 nav {
     border-left: 1px solid black;
     border-right: 1px solid black;
@@ -32,26 +28,4 @@ nav {
 }
 a {
     padding: 15px;
-}
-p {
-    position: absolute;
-    right: 30%;
-    top: 75px;
-}
-
-img {
-    border: 2px solid lightcoral;
-    background-color: black;
-    display: block;
-    position: absolute;
-    left: 25%;
-    top: 15px;
-}
-
-main {
-    position: relative;
-}
-
-nav {
-    
 }
