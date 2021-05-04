@@ -3,46 +3,57 @@
 
 <head>
     <title>Andrew Villaume</title>
-    <meta charset="utf-8"/>
-    <meta name="Author" content="Andrew Villaume"/>
-    <meta name="Purpose" content="Introduction to Coding in HTML/CSS/JS"/>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Andrew Villaume" />
+    <meta name="Purpose" content="Introduction to Coding in HTML/CSS/JS" />
     <link rel="shortcut icon" href="./images/siteicon.jpg" type="image/x-icon" />
-    <link href="./styles/homepage.css" rel="stylesheet"/>
+    <link href="./styles/homepage.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Andrew Villaume</h1>
-
-        <nav>
-            <a  class="nav" href="index.html" rel="slideto">Home</a>
-            <a  class="nav" href="pages/education.html" rel="slideto">Education</a>
-            <a  class="nav" href="pages/about_me.html" rel="slideto">About Me</a>
-            <a  class="nav" href="https://github.com/andrew-villaume" rel="slideto" title="My GitHub Page" target="_blank">GitHub</a>
-        </nav>
+        <div class="innerHeader">
+            <h1 id="nameHeader">Andrew Villaume</h1>
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="pages/education.html">
+                        <li>Education</li>
+                    </a>
+                    <a href="index.html">
+                        <li>About Me</li>
+                    </a>
+                    <a href="index.html">
+                        <li>GitHub</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <hr />
 
     <main>
-            <img src="images/linkedin.jpg" height="547" width="410" alt="Picture of Me">
+        <div class="flexBody">
+            <div id="flexImage">
+                <img src="images/linkedin.jpg" height="547" width="410" alt="Picture of me.">
+            </div>
 
-    <article id ="Introduction">
-        <h2> Introduction</h2>
-        <p>
-            Hello!
-            <br /> 
-            My name is <em>Andrew Villaume</em>.
-            <br />
-            I am a CS Student at Colorado State University. <br />
-            This is my first exploration in front end development.
-            <br />
-        </p>
-    </article>
+            <div id="flexText">
+                <h2>Introduction</h2>
+                <p>
+                    Hello!  My name is <em>Andrew Villaume</em></br><br>
+                    I am an aspiring Software Developer currently attending Colorado State University.</br></br>
+
+                    I will graduate from University during the Fall Semester of 2022.
+                </p>
+
+            </div>
+
+        </div>
     </main>
 
 
 </body>
-
-</html>

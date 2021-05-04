@@ -2,55 +2,66 @@
     background: linear-gradient(90deg,#C9D6FF,#E2E2E2);
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-
 }
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     width: 100%;
-    height: 70px;
-    position: relative;
-    background-color:lightcoral;
+    background-color: lightcoral;
+    margin: 10px;
 }
-h1 {
+.innerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+#nameHeader {
+    margin: 0;
     color: white;
-    width: 25%;
-    position: relative;
-    top: 10px;
-    left: 10px;
 }
+
 nav {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 15px;
-    font-size: 1.5em;
-    position: absolute;
-    right: 5%;
-    top: 3px;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
 }
 a {
-    padding: 15px;
+    text-decoration: 0;
 }
-main {
+
+.flexBody {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+#flexImage {
     position: relative;
-}
-#Introduction {
-    position: absolute;
-    left: 45vw;
-}
-@media (max-height: 600px) {
-    #Introduction {
-        position: absolute;
-        top: 100vh;
-        left: 10vw;
-    }
-}
-
-img {
+    left: 20vw;
+    padding: 0;
+    margin: 0;
     border: 2px solid lightcoral;
-    background-color: black;
-    display: block;
-    position: absolute;
-    left: 10%;
-    top: 15px;
+}
+#flexText {
+    position: relative;
+    left: 25vw;
+    width: 250px;
 }
 
+#flexText em {
+    text-decoration: 0;
+}
 
