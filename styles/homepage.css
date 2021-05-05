@@ -49,6 +49,7 @@ a {
     flex-wrap: wrap;
 }
 #flexImage {
+    line-height: 0;
     position: relative;
     left: 20vw;
     padding: 0;
@@ -63,5 +64,10 @@ a {
 
 #flexText em {
     text-decoration: 0;
+}
+
+#flexText h2 {
+    text-align: left;
+    padding-bottom: 20px;
 }
 

@@ -39,10 +39,13 @@ li {
 a {
     text-decoration: 0;
 }
-
+/* H2 text align center and .content-table margin 25px auto to make horizontally aligned */
+h2 {
+    text-align: center;
+}
 .content-table {
     border-collapse: collapse;
-    margin: 25px 0;
+    margin: 25px auto;
     font-size: .9em;
     min-width: 400px;
     border-radius: 5px 5x 0 0;
@@ -71,9 +74,5 @@ a {
 
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #0000CD;
-}
-
-.bodyTable {
-    margin: 0 auto;
 }
 
