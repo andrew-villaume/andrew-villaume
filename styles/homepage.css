@@ -1,4 +1,10 @@
-﻿/*   ***DOCUMENT***   */
+﻿/* ***TODO:*** */
+/* -Add About Me Page */
+/* -Add Projects Page? */
+/* -Add Media Query for smaller screens, place grid gap */
+/* -Remove emphasis italicizing in introText */
+
+/*   ***DOCUMENT***   */
 
 html {
     background: linear-gradient(90deg,#C9D6FF,#E2E2E2);
@@ -13,7 +19,6 @@ html, body {
 /*   ***HEADER*** */
 
 header {
-    width: 100%;
     background-color: lightcoral;
     margin: 10px;
 }
