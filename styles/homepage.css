@@ -1,4 +1,6 @@
-﻿html {
+﻿/*   ***DOCUMENT***   */
+
+html {
     background: linear-gradient(90deg,#C9D6FF,#E2E2E2);
     height: 100%;
     font-family: 'Open Sans', sans-serif;
@@ -8,10 +10,17 @@ html, body {
     padding: 0px;
 }
 
+/*   ***HEADER*** */
+
 header {
     width: 100%;
     background-color: lightcoral;
     margin: 10px;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
 }
 .innerHeader {
     display: flex;
@@ -29,10 +38,6 @@ header {
     color: white;
 }
 
-nav {
-    margin: 0;
-    padding: 0;
-}
 li {
     display: inline;
     font-size: 18px;
@@ -43,31 +48,25 @@ a {
     text-decoration: 0;
 }
 
-.flexBody {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-}
-#flexImage {
-    line-height: 0;
+/*  ***BODY*** */
+
+.bodyGrid {
     position: relative;
-    left: 20vw;
-    padding: 0;
-    margin: 0;
+    top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". introPic introText .";
+
+}
+
+#item1 {
+    grid-area: introPic;
+}
+
+#item1 img {
     border: 2px solid lightcoral;
 }
-#flexText {
-    position: relative;
-    left: 25vw;
-    width: 250px;
-}
 
-#flexText em {
-    text-decoration: 0;
+#item2 {
+    grid-area: introText;
 }
-
-#flexText h2 {
-    text-align: left;
-    padding-bottom: 20px;
-}
-
