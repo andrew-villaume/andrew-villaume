@@ -1,4 +1,4 @@
-/* TODO: CENTER TABLE ON EACH PAGE */
+/* ***HEADER*** */
 
 html {
     background: linear-gradient(90deg,#C9D6FF,#E2E2E2);
@@ -39,10 +39,12 @@ li {
 a {
     text-decoration: 0;
 }
-/* H2 text align center and .content-table margin 25px auto to make horizontally aligned */
 h2 {
     text-align: center;
 }
+
+/* ***BODY*** */
+
 .content-table {
     border-collapse: collapse;
     margin: 25px auto;

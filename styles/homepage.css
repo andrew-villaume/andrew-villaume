@@ -1,4 +1,4 @@
-﻿/* ***TODO:*** */
+/* ***TODO:*** */
 /* -Add About Me Page */
 /* -Add Projects Page? */
 /* -Add Media Query for smaller screens, place grid gap */
@@ -21,6 +21,7 @@ html, body {
 header {
     background-color: lightcoral;
     margin: 10px;
+    height: 56px;
 }
 
 nav {
@@ -48,6 +49,10 @@ li {
     font-size: 18px;
     font-weight: bold;
     margin: 0 10px;
+}
+
+ul {
+    text-decoration: 0;
 }
 a {
     text-decoration: 0;
