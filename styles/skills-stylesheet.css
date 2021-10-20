@@ -113,45 +113,26 @@ a {
     display: block;
 }
 
+/*  ***BODY*** */
 
+.bodyGrid {
+    position: relative;
+    top: 9vh;
+    display: grid;
+    column-gap: 5vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". introPic introText .";
 
-/* ***BODY*** */
-
-h2 {
-    text-align: center;
 }
 
-
-.content-table {
-    border-collapse: collapse;
-    margin: 25px auto;
-    font-size: .9em;
-    min-width: 400px;
-    border-radius: 5px 5x 0 0;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+#item1 {
+    grid-area: introPic;
 }
 
-.content-table thead tr { 
-    background-color: #0000CD;
-    color: white;
-    text-align: left;
-    font-weight: bold;
+#item1 img {
+    border: 2px solid lightcoral;
 }
 
-.content-table th, .content-table td {
-    padding: 12px 15px;
+#item2 {
+    grid-area: introText;
 }
-
-.content-table tr, tbody {
-    border-bottom: 1px solid #dddddd;
-}
-
-.content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
-}
-
-.content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #0000CD;
-}
-

@@ -2,30 +2,137 @@ html {
     background: linear-gradient(90deg,#C9D6FF,#E2E2E2);
     height: 100%;
     font-family: 'Open Sans', sans-serif;
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
 
-}
+/*   ***HEADER*** */
+
+/*   ***HEADER*** */
+
+/* Potentially make margin variable here? */
+
 header {
-    width: 100%;
-    height: 70px;
-    position: relative;
-    background-color:lightcoral;
+    background-color: lightcoral;
+    margin: 10px;
+    height: 6.5vh;
 }
-h1 {
+
+.innerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 60vw;
+    height: 100%;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+#nameHeader {
+    margin: 0;
     color: white;
-    width: 25%;
-    position: relative;
-    top: 10px;
-    left: 10px;
+    font-size: 2.96296296296296vh;
 }
+
+#navBar li {
+    font-size: 2.1vh;
+}
+
+#navBar {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 nav {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 15px;
-    font-size: 1.5em;
-    position: absolute;
-    right: 5%;
-    top: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+#contact-icon {
+    background-color: transparent;
+    margin: 0 2px;
+}
+
+
+li {
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+ul {
+    text-decoration: 0;
 }
 a {
-    padding: 15px;
+    text-decoration: 0;
+}
+
+#icons {
+    display: flex;
+    align-items: center;
+}
+
+#github-icon {
+    height: 4.62962962962963vh;
+    width: 2.60416666666667vw;
+}
+
+#linkedin-icon, #contact-icon {
+    height: 3.7037037037037vh;
+    width: 2.08333333333333vw;
+}
+
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#dropdown-content ul a {
+    text-decoration: 0;
+}
+
+#dropdown-content li {
+    display: inline-block;
+}
+
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
+
+/*  ***BODY*** */
+
+.bodyGrid {
+    position: relative;
+    top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". introPic introText .";
+
+}
+
+#item1 {
+    grid-area: introPic;
+}
+
+#item1 img {
+    border: 2px solid lightcoral;
+}
+
+#item2 {
+    grid-area: introText;
 }

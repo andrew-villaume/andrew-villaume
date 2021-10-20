@@ -1,37 +1,78 @@
-<!--TODO: When zoomed more, move text down, below picture, further-->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta encoding="utf-8">
-    <meta name="Author" content="Andrew Villaume">
-    <meta name="Purpose" conent="Andrew Villaume's Introduction">
-    <title>Andrew Villaume About Me></title>
+    
+    <!-- META -->
+    <title>Andrew Villaume</title>
+    <meta charset="utf-8" />
+    <meta name="Author" content="Andrew Villaume" />
+    <meta name="Purpose" content="Introduction to Coding in HTML/CSS/JS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="./images/siteicon.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles/aboutme-stylesheet.css">
+
+    <!-- STYLESHEETS-->
+    <link href="../styles/aboutme-stylesheet.css" rel="stylesheet" />
+
+    <!-- FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>About Me</h1>
-
-        <nav>
-            <a  class="nav" href="../index.html" rel="slideto">Home</a>
-            <a  class="nav" href="education.html" rel="slideto">Education</a>
-            <a  class="nav" href="about_me.html" rel="slideto">About Me</a>
-            <a  class="nav" href="https://github.com/andrew-villaume" rel="slideto" title="My GitHub Page" target="_blank">GitHub</a>
-        </nav>
+        <div class="innerHeader">
+            <h1 id="nameHeader">About Me</h1>
+            <div id="navBar">
+                <nav>
+                    <ul>
+                        <a href="../index.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="education.html">
+                            <li>Education</li>
+                        </a>
+                        <a href="about_me.html">
+                            <li>About Me</li>
+                        </a>
+                        <a href="skills.html">
+                            <li>Skills + Projects</li>
+                        </a>
+                        <a href="hyo_summer_internship.html">
+                            <li>HYO Summer Internship</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+            <div id="icons">
+                <div id="dropdown">
+                    <span> <img id="contact-icon" src="../images/contact-icon.png" alt="Get in Touch with Me"> </span>
+                    <div id="dropdown-content">
+                        <ul>
+                            <li>andrew.c.villaume@gmail.com</li>
+                            <li>303-548-8879</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://github.com/andrew-villaume" target="_blank">
+                    <img id="github-icon" src="../images/github-icon.png" alt="github">
+                </a>
+                <a href="https://www.linkedin.com/in/andrew-villaume-b6b327183/" target="_blank">
+                    <img id="linkedin-icon" src="../images/linkedin-icon.png" alt="linkedin">
+                </a>
+               
+            </div>
+        </div>
     </header>
-    <hr />
-    
-    <main>
-        <p>In my free-time I enjoy playing video games competitively.  I have reached the rank of </p>
 
-    </main> 
+   
+    <div style="text-align: center; margin: 10vh auto">
+        <p1 style="display: inline-block; margin: 0 auto; font-weight: bold; border: 3px solid black; font-size: 10vh;">TBD; Page Completion By 10/23</p1>
+        </div>
+
+
 
 </body>
-
-
-</html>
