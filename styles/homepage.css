@@ -26,11 +26,9 @@ header {
     background-color: lightcoral;
     margin: 10px;
     height: 6.5vh;
-    border: 1px solid red;
 }
 
 .innerHeader {
-    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +44,6 @@ header {
     margin: auto;
     color: white;
     font-size: 2.96296296296296vh;
-    border: 1px solid green;
 }
 
 #navBar nav {
@@ -56,7 +53,6 @@ header {
 
 #navBar nav ul {
     margin: auto;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
 }
@@ -81,7 +77,6 @@ ul, a {
 
 #icons {
     margin: auto;
-    border: 1px solid yellow;
     display: flex;
     align-items: center;
 }

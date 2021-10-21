@@ -114,3 +114,44 @@ a {
 
 /*  ***BODY*** */
 
+.bodyGrid {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid gold;
+    top: 9vh;
+    display: grid;
+    column-gap: 5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: "elm1 elm2"
+                         "elm3 elm4"
+
+}
+
+#item1 {
+    position: relative;
+    display: flex;
+    grid-area: elm1;
+    font-size: 5vh;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#item1 h1 {
+    position: absolute;
+    bottom: -100%;
+    right: 10%;
+}
+
+
+#item2 {
+    grid-area: elm2;
+}
+
+#item3 {
+    grid-area: elm3;
+}
+#item4 {
+    grid-area: elm4;
+}
