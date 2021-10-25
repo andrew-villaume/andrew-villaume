@@ -130,18 +130,25 @@ a {
 }
 
 #item1 {
+    grid-area: elm1;
     position: relative;
     display: flex;
-    grid-area: elm1;
-    font-size: 5vh;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #item1 h1 {
-    position: absolute;
-    bottom: -100%;
-    right: 10%;
+    font-size: 5vh;
+    float: left;
+}
+
+#item1 header{
+    float: left;
+}
+
+#item1 p{
+    font-size: 1.5vh;
 }
 
 
