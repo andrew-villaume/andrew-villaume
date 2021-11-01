@@ -14,6 +14,8 @@ html, body {
 
 /* Potentially make margin variable here? */
 
+
+
 header {
     background-color: lightcoral;
     margin: 10px;
@@ -24,32 +26,42 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 60vw;
     height: 100%;
+    padding: 0;
     margin: 0 auto;
     background-color: lightcoral;
 }
 
 #nameHeader {
-    margin: 0;
+    margin: auto;
     color: white;
     font-size: 2.96296296296296vh;
 }
 
-#navBar li {
-    font-size: 2.1vh;
-}
-
-#navBar {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-nav {
+#navBar nav {
     margin: 0;
     padding: 0;
 }
+
+#navBar nav ul {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#navBar nav ul li {
+    display: inline-block;
+    font-size: 1.66vh;
+    font-weight: bold;
+    margin: 0 1vw;
+}
+
+ul, a {
+    text-decoration: 0;
+}
+
 
 #contact-icon {
     background-color: transparent;
@@ -57,21 +69,8 @@ nav {
 }
 
 
-li {
-    display: inline;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-ul {
-    text-decoration: 0;
-}
-a {
-    text-decoration: 0;
-}
-
 #icons {
+    margin: auto;
     display: flex;
     align-items: center;
 }
@@ -114,7 +113,6 @@ a {
 }
 
 
-
 /* ***BODY*** */
 
 h2 {
@@ -154,4 +152,3 @@ h2 {
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #0000CD;
 }
-
