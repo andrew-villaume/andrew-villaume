@@ -12,10 +12,6 @@ html, body {
 
 /*   ***HEADER*** */
 
-/* Potentially make margin variable here? */
-
-
-
 header {
     background-color: lightcoral;
     margin: 10px;

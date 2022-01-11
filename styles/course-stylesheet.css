@@ -125,7 +125,7 @@ ul, a {
     grid-template-columns: 1fr 1fr;
     grid-row: 1fr 1fr;
     grid-template-areas: "elm1 elm2"
-                         "elm3 elm4"
+                         "elm3 elm3"
 
 }
 
@@ -150,6 +150,11 @@ ul, a {
     color: #C8C372;
 }
 
+#item1 #skills{
+    color: #1E4D2B;
+    font-size: 6.5vh;
+}
+
 #item1 img{
     height: 12.96296296296296vh;
 }
@@ -160,17 +165,19 @@ ul, a {
     color: #1E4D2B;
 }
 
+#item1 li {
+    color: #7a7622;
+    
+}
+
+#item1 li span {
+    color: black;
+}
+
+
 
 #item2 {
     grid-area: elm2;
-}
-
-
-#item3 {
-    grid-area: elm3;
-}
-#item4 {
-    grid-area: elm4;
 }
 
 .content-table {
@@ -210,3 +217,13 @@ tr.innerHeader {
 .content-table tbody tr:last-of-type {
     border-bottom: 2px solid #1E4D2B;
 }
+
+
+#item3 {
+    grid-area: elm3;
+}
+
+#item3 h2 {
+    color: #1E4D2B;
+}
+

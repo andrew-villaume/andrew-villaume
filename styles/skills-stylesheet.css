@@ -12,8 +12,6 @@ html, body {
 
 /*   ***HEADER*** */
 
-/* Potentially make margin variable here? */
-
 header {
     background-color: lightcoral;
     margin: 10px;
@@ -24,32 +22,42 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 60vw;
     height: 100%;
+    padding: 0;
     margin: 0 auto;
     background-color: lightcoral;
 }
 
 #nameHeader {
-    margin: 0;
+    margin: auto;
     color: white;
     font-size: 2.96296296296296vh;
 }
 
-#navBar li {
-    font-size: 2.1vh;
-}
-
-#navBar {
-    display: flex;
-    flex-wrap: nowrap;
-}
-
-nav {
+#navBar nav {
     margin: 0;
     padding: 0;
 }
+
+#navBar nav ul {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#navBar nav ul li {
+    display: inline-block;
+    font-size: 1.66vh;
+    font-weight: bold;
+    margin: 0 1vw;
+}
+
+ul, a {
+    text-decoration: 0;
+}
+
 
 #contact-icon {
     background-color: transparent;
@@ -57,21 +65,8 @@ nav {
 }
 
 
-li {
-    display: inline;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-ul {
-    text-decoration: 0;
-}
-a {
-    text-decoration: 0;
-}
-
 #icons {
+    margin: auto;
     display: flex;
     align-items: center;
 }
@@ -113,26 +108,54 @@ a {
     display: block;
 }
 
-/*  ***BODY*** */
 
-.bodyGrid {
-    position: relative;
-    top: 9vh;
-    display: grid;
-    column-gap: 5vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: ". introPic introText .";
-
+/* ***BODY*** */
+.bodyWrap {
+    display: flex;
+    flex-direction: row;
 }
 
 #item1 {
-    grid-area: introPic;
-}
-
-#item1 img {
-    border: 2px solid lightcoral;
+    grid-area: item1;
 }
 
 #item2 {
-    grid-area: introText;
+    grid-area: item2;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: .9em;
+    min-width: 400px;
+    border-radius: 5px 5x 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr { 
+    background-color: #0000CD;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th, .content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tr, tbody {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #0000CD;
 }

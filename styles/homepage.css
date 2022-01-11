@@ -29,6 +29,7 @@ header {
 }
 
 .innerHeader {
+    max-width: 60vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,8 +151,9 @@ ul, a {
 }
 
 #picWrapper img{
+    left:12%;
     object-fit: contain;
-    max-width: 100%;
+    max-width: 70%;
     max-height: 100%;
     position: relative;
     top: 10vh;
@@ -164,7 +166,7 @@ ul, a {
 }
 
 #outterWrapper2 {
-    font-size: 1.48148148148148vh;
+    font-size: 2vh;
     position: relative;
     top: 10vh;
     background-color: #e5c4a3;

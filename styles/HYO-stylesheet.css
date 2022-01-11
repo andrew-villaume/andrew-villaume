@@ -110,96 +110,23 @@ ul, a {
 
 
 /*  ***BODY*** */
+/* Potential issue in that tops of both grid areas aren't evenly aligned.  i.e. 3vh margin on second one so text is starting
+at the top of the picture  */
+/* Note:  For automati resizing of the picture, used a specific width and height 100% in the inline CSS of the picture. */
+
 
 .bodyGrid {
-    margin: 5vh 0;
-    width: 100%;
-    display: grid;
-    column-gap: 3vw;
-    row-gap: 5vh;
-    grid-template-columns: .5fr 1fr 1fr .5fr;
-    grid-template-areas: 
-                    ". item1 item2 ."
-                    ". item3 item4 ."
-                    ". item5 item6 ."
-                    ". item7 item8 ."
-                    ". item9 item10 .";
-    grid-auto-columns: minmax(50px,auto);
+    margin: 10vh;
+
 }
 
 #item1 {
-    grid-area: item1;
-    position: flex;
-    justify-self: left;   
-}
-#item1 img {
-    border: 2px solid lightcoral;
+    float: left;
+    margin-right: 5vh;
 }
 
 #item2 {
-    grid-area: item2;
+    margin-top: 3vh;
 }
 
-#item3 {
-    grid-area: item3;
-}
 
-#item4 {
-    grid-area: item4;
-    display: flex;
-    flex-direction: column;
-    justify-self: right;
-}
-#item4 img {
-    border: 2px solid lightcoral;
-    max-width: 50vh;
-}
-
-#item5 {
-    grid-area: item5;
-    display: flex;
-    flex-direction: column;
-}
-#item5 img{
-    max-height: 60vh;
-    max-width: 25vw;
-    border: 2px solid lightcoral;
-}
-
-#item6 {
-    grid-area: item6;
-}
-
-#item7 {
-    grid-area: item7;
-}
-
-#item8 {
-    grid-area: item8;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    justify-self: right;
-}
-#item8 img {
-    max-width: 50vh;
-}
-#item8 #deca {
-    border: 2px solid lightcoral;
-}
-
-#item9 {
-    grid-area: item9;
-}
-#item9 img{
-    max-width: 50vh;
-    border: 2px solid lightcoral;
-}
-
-#item10 {
-    grid-area: item10;
-}
-
-.textHeader {
-    color: black;
-}
