@@ -108,6 +108,10 @@ ul, a {
     display: inline-block;
 }
 
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+
 
 /*  ***BODY*** */
 /* Potential issue in that tops of both grid areas aren't evenly aligned.  i.e. 3vh margin on second one so text is starting

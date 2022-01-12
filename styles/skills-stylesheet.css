@@ -9,6 +9,12 @@ html, body {
     margin: 0px;
     padding: 0px;
 }
+/*
+--Back arrow
+--Font size of header "Skills and Projects"
+--Fix links to other pages
+
+*/
 
 /*   ***HEADER*** */
 
@@ -30,6 +36,10 @@ header {
     background-color: lightcoral;
 }
 
+#back-arrow img {
+    float: left;
+    height: 4vh;
+}
 #nameHeader {
     margin: auto;
     color: white;
@@ -109,27 +119,76 @@ ul, a {
 }
 
 
-/* ***BODY*** */
-.bodyWrap {
-    display: flex;
-    flex-direction: row;
+/*  ***BODY*** */
+
+.bodyGrid {
+    width: 75%;
+    position: relative;
+    margin: 0 auto;
+    top: 9vh;
+    display: grid;
+    column-gap: 5vw;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: "elm1 elm2"
+                         "elm3 elm3"
+
 }
 
 #item1 {
-    grid-area: item1;
+    grid-area: elm1;
+    overflow: visible;
 }
+
+#item1 #header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    height: 12.96296296296296vh;
+    margin: 0;
+    top: 10
+}
+
+#item1 h1 {
+    font-size: 8vh;
+    color: #C8C372;
+}
+
+#item1 #skills{
+    color: #1E4D2B;
+    font-size: 6.5vh;
+}
+
+#item1 img{
+    height: 12.96296296296296vh;
+}
+
+#item1 p{
+    font-weight: bolder;
+    font-size: 2.5vh;
+    color: #1E4D2B;
+}
+
+#item1 li {
+    color: #7a7622;
+    
+}
+
+#item1 li span {
+    color: black;
+}
+
+
 
 #item2 {
-    grid-area: item2;
-}
-
-h2 {
-    text-align: center;
+    grid-area: elm2;
 }
 
 .content-table {
     border-collapse: collapse;
-    margin: 25px auto;
+    margin: 25px auto 25px 5px;
     font-size: .9em;
     min-width: 400px;
     border-radius: 5px 5x 0 0;
@@ -137,11 +196,16 @@ h2 {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
+
 .content-table thead tr { 
-    background-color: #0000CD;
+    background-color: #cfb193;
     color: white;
     text-align: left;
     font-weight: bold;
+}
+
+tr.innerHeader {
+    color: #C8C372;
 }
 
 .content-table th, .content-table td {
@@ -157,5 +221,32 @@ h2 {
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #0000CD;
+    border-bottom: 2px solid #1E4D2B;
 }
+
+
+#item3 {
+    grid-area: elm3;
+}
+
+#project1 {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+}
+
+#project2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#leftP2 {
+    margin-top: 20vh;
+}
+

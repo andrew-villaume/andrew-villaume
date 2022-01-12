@@ -127,7 +127,7 @@ h2 {
 }
 
 .content-table thead tr { 
-    background-color: #0000CD;
+    background-color: #8bb3ac;
     color: white;
     text-align: left;
     font-weight: bold;
@@ -146,5 +146,5 @@ h2 {
 }
 
 .content-table tbody tr:last-of-type {
-    border-bottom: 2px solid #0000CD;
+    border-bottom: 2px solid #78a19b;
 }

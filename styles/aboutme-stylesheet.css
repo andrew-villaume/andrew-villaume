@@ -108,12 +108,16 @@ ul, a {
     display: inline-block;
 }
 
+#dropdown:hover #dropdown-content {
+    display: block;
+}
 
 /*  ***BODY*** */
 
 .bodyGrid {
     margin: 5vh 0;
     width: 100%;
+    max-width: 100%;
     display: grid;
     column-gap: 3vw;
     row-gap: 5vh;
