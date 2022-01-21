@@ -225,9 +225,12 @@ tr.innerHeader {
 }
 
 
+/* PROJECT AREA*/
 #item3 {
     grid-area: elm3;
 }
+
+/* PROJECT 1*/
 
 #project1 {
     display: flex;
@@ -235,18 +238,89 @@ tr.innerHeader {
     flex-direction: row;
 }
 
+/* Applies to the right space (in a 1:1 format) for all right sides of projects*/
 .right {
     display: flex;
     flex-direction: column;
 }
 
+/* PROJECT 2*/
+
 #project2 {
+    margin-top: 10vh;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
 }
 
 #leftP2 {
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
+/* PROJECT 3*/
+
+#project3 {
+    margin-top: 10vh;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+#leftP3 {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+    grid-template-areas: "elm1 elm2"
+                         "elm3 elm4"
+                         "elm5 elm6"
+}
+
+#leftP3--1 {
+    grid-area: elm1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#leftP3--2 {
+    grid-area: elm2;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#leftP3--3 {
+    grid-area: elm3;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#leftP3--4 {
+    grid-area: elm4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#leftP3--5 {
+    grid-area: elm5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#leftP3--6 {
+    grid-area: elm6;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.p3Img {
+    max-width: 20vw;
+    max-height: 40vh;
+    margin: 0 auto;
+    object-fit: cover;
+}
